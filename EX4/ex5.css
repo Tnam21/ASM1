@@ -1,0 +1,118 @@
+body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  h1 {
+    font-weight: normal;
+    margin: 32px 0 20px 32px;
+  }
+  .browser-bar {
+    height: 28px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    color: #888;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+  .browser-title {
+    margin-left: 10px;
+  }
+  .bg {
+    width: 900px;
+    margin: 0 auto;
+    height: 500px;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80') center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .plans {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .plan {
+    background: rgba(28, 28, 28, 0.92);
+    border: 3px solid #555;
+    border-radius: 4px;
+    box-shadow: 0 8px 20px #1117;
+    color: #fff;
+    width: 260px;
+    padding: 30px 18px 20px 18px;
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .plan h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+  }
+  .plan .desc {
+    font-size: 0.99rem;
+    color: #ccd;
+    margin-bottom: 24px;
+    margin-top: 0;
+    text-align: center;
+  }
+  .plan .price {
+    font-size: 2.1rem;
+    color: #24dedb;
+    font-weight: bold;
+    margin-bottom: 18px;
+  }
+  .plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    color: #e5e5e5;
+    font-size: 1.07rem;
+    text-align: left;
+  }
+  .plan ul li {
+    margin-bottom: 4px;
+  }
+  .contact {
+    width: 90%;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.07rem;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 9px 0;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0002;
+    transition: background 0.2s;
+  }
+  .contact.gray {
+    background: #bdbdbd;
+    color: #222;
+  }
+  .contact.green {
+    background: #19e7e2;
+    color: #fff;
+  }
+  .contact:hover {
+    filter: brightness(0.95);
+  }
+  @media (max-width: 1000px) {
+    .bg, .browser-bar { width: 98vw; }
+    .plans { flex-direction: column; align-items: center; }
+    .plan { margin-bottom: 28px; }
+  }

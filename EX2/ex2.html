@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Div Example</title>
+  <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+
+  <div>
+    Lorem ipsum dolor<br>
+    sit adipisicing elit.
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Size Values (em)</title>
+  <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+
+  <div>
+    <div class="nested-div">
+      Lorem ipsum dolor<br>
+      sit emet, adipisicing elit. Aliam amet consequuntur, delectus dolorum earum.
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>REM Example</title>
+  <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+  <h2>Size Values (rem)</h2>
+  <ul>
+    <li><strong>Rem</strong>'s: scalable unit (based on the <strong>html</strong> element)</li>
+  </ul>
+  <div class="container">
+    <pre>
+&lt;div&gt;
+  &lt;div class="nested-div"&gt;
+    Lorem ipsum dolor<br>    sit adipisicing elit…
+  &lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+    <pre>
+html { font-size: 25px }
+div { font-size: 2rem }
+.nested-div { font-size: 1.5rem }
+    </pre>
+    <div class="comment">2rem = 2 * 25px = 50px</div>
+    <div class="comment">1.5rem = 1.5 * 25px = 37.5px</div>
+  </div>
+
+  <div class="output">
+    <div>
+      <div class="nested-div">
+        Lorem ipsum dolor<br>
+        sit adipisicing elit…
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Size in % of the Parent</title>
+  <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+  <h2>Size in % of the Parent</h2>
+  <div class="flexbox">
+    <div class="left">
+      <pre class="html-code">
+&lt;div id="outer-div"&gt;
+  I am outer-div -&gt; 600px
+  &lt;div id="inner-div"&gt;
+    I am div with 50% …
+  &lt;/div&gt;
+&lt;/div&gt;
+      </pre>
+      <div class="bubble bubble-left">width:<br><b>600px</b></div>
+      <pre class="css-code">
+#outer-div {
+  width: 600px;
+  text-align: center;
+}
+      </pre>
+      <pre class="css-code">
+#inner-div {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 50px;
+}
+      </pre>
+    </div>
+    <div class="right">
+      <div class="browser-bar">
+        <span class="browser-title">percent.html</span>
+      </div>
+      <div id="outer-div">
+        I am outer-div -> 600px
+        <div id="inner-div">
+          I am div with 50% from #outer-div
+        </div>
+      </div>
+      <div class="bubble bubble-right">
+        width: 50% *<br>600px = <b>300px</b>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

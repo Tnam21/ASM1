@@ -1,0 +1,33 @@
+body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+    margin: 40px 0 0 0;
+  }
+  
+ 
+  .browser-title {
+    margin-left: 10px;
+  }
+  
+  #outer-div {
+    border: 3px dashed #2ec4de;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 30px 0 35px 0;
+    background: #fafdff;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  #inner-div {
+    border: 3px solid #263273;
+    width: 50%;
+    text-align: center;
+    margin: 28px auto 0 auto;
+    line-height: 50px;
+    background: #fff;
+    font-size: 1.06rem;
+    box-sizing: border-box;
+  }
+ 

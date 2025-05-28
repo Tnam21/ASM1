@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  .rgba-box {
+    background: rgba(87, 76, 83, 0.9); /* Tím đậm */
+    top: 100px;
+    left: 100px;
+  }
+  
+  .hsla-box {
+    background: hsla(344, 73%, 52%, 0.5); /* Hồng trong suốt */
+    top: 130px;
+    left: 150px;
+  }
